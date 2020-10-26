@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="css/animate.css"> 
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
     <title>Document</title>
 
     <?php wp_head(); ?>
+
 </head>
 <body>
     <!-- Меню -->
@@ -52,20 +53,6 @@
     </section>
     <!-- /Меню -->
 
-    <div class="popup__form">
-    <form action="#">
-    <div class="popup__title">
-    Форма обратной связи
-    </div>
-    <div class="popup__subtitle">
-    Получите индивидуальное предложение на производство и поставку изделий
-    </div>
-    <div class="popup__label">
-    Введите ваш номер телефона:
-    </div>
-    </form>
-    </div>
-
     <!-- Шапка приложения -->
     <header class="header">
 
@@ -84,8 +71,8 @@
 
                     <!-- header-logo -->
                     <div class="header-logo">
-                        <img class="header-logo__logo" src="images/header/header-logo.png" alt="Логотип">
-                        <img class="header-logo__logo-small" src="images/header/header-logo-small.png" alt="Логотип">
+                        <img class="header-logo__logo" src="<?php echo get_template_directory_uri(); ?>/images/header/header-logo.png" alt="Логотип">
+                        <img class="header-logo__logo-small" src="<?php echo get_template_directory_uri(); ?>/images/header/header-logo-small.png" alt="Логотип">
                     </div> 
                     <!-- /header-logo -->
                 </div>
@@ -112,7 +99,7 @@
                         <!-- /header-text__phone -->
 
                         <!-- header-text__button -->
-                            <button class="header-text__button"><img class="header-text__icon" src="images/header/icon-phone.png"><span class="button-text">Заказать звонок</button>                  
+                            <button class="header-text__button"><img class="header-text__icon" src="<?php echo get_template_directory_uri(); ?>/images/header/icon-phone.png"><span class="button-text">Заказать звонок</button>                  
                         <!-- /header-button -->
 
                     </div>
@@ -133,7 +120,7 @@
                     <!-- main-img -->
 
                     <div class="main-img wow slideInLeft">
-                    <img src="images/main/main-cardboard.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/main/main-cardboard.png" alt="">
                     </div>
 
                     <!-- /main-img -->
@@ -208,7 +195,7 @@
 
                 <div class="features-card  wow fadeInUp">
                     <div class="features-icon">
-                        <img src="images/features/production.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/features/production.png" alt="">
                     </div>
                     <div class="features-text">
                         <h3 class="features-title">Производство</h3>
@@ -218,7 +205,7 @@
 
                 <div class="features-card wow fadeInUp" data-wow-delay="0.2s">
                     <div class="features-icon">
-                        <img src="images/features/samples.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/features/samples.png" alt="">
                     </div>
                     <div class="features-text">
                         <h3 class="features-title">Бесплатные образцы</h3>
@@ -228,7 +215,7 @@
 
                 <div class="features-card wow fadeInUp" data-wow-delay="0.4s">
                     <div class="features-icon">
-                        <img src="images/features/quality.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/features/quality.png" alt="">
                     </div>
                     <div class="features-text">
                         <h3 class="features-title">Стабильное качество</h3>
@@ -238,7 +225,7 @@
 
                 <div class="features-card wow fadeInUp" data-wow-delay="0.6s">
                     <div class="features-icon">
-                        <img src="images/features/warehouse.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/features/warehouse.png" alt="">
                     </div>
                     <div class="features-text">                    
                         <h3 class="features-title">Страховой запас</h3>
@@ -248,7 +235,7 @@
 
                 <div class="features-card wow fadeInUp" data-wow-delay="0.8s">
                     <div class="features-icon">
-                        <img src="images/features/print.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/features/print.png" alt="">
                     </div>
                     <div class="features-text">
                         <h3 class="features-title">Флексопечать</h3>
@@ -258,11 +245,12 @@
 
                 <div class="features-card wow fadeInUp" data-wow-delay="1s">
                     <div class="features-icon">
-                        <img src="images/features/technology.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/features/technology.png" alt="">
                     </div>
                     <div class="features-text">
                         <h3 class="features-title">Гидрофобные добавки</h3>
-                        <h4 class="features-subtitle">На производстве реализована технология, которая позволяет гофрокартону стать прочнее</h4>                    </div>
+                        <h4 class="features-subtitle">На производстве реализована технология, которая позволяет гофрокартону стать прочнее</h4>
+                    </div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -283,7 +271,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="products-block">
                         <div class="products-img wow slideInLeft">
-                            <img src="images/products/product_1.jpg" alt="Гофрокороб 4-х клапанный">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/products/product_1.jpg" alt="Гофрокороб 4-х клапанный">
                         </div>
                         <h4 class="products-block__title">Гофрокороб 4-х клапанный</h4>
                         <button class="products-button button-o">Подробнее</button>
@@ -294,7 +282,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="products-block">
                         <div class="products-img wow slideInRight">
-                            <img src="images/products/product_2.jpg" alt="Гофролоток">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/products/product_2.jpg" alt="Гофролоток">
                         </div>
                         <h4 class="products-block__title">Гофролоток</h4>
                         <button class="products-button button-o">Подробнее</button>
@@ -307,7 +295,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="products-block">
                         <div class="products-img wow slideInLeft">
-                            <img src="images/products/product_3.jpg" alt="Гофрокороб самосборный (сложная высечка)">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/products/product_3.jpg" alt="Гофрокороб самосборный (сложная высечка)">
                         </div>
                         <h4 class="products-block__title">Гофрокороб самосборный <span class="break">(сложная высечка)</span></h4>
                         <button class="products-button button-o">Подробнее</button>
@@ -318,7 +306,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="products-block">
                         <div class="products-img wow slideInRight">
-                            <img src="images/products/product_4.jpg" alt="Листовой гофрокартон">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/products/product_4.jpg" alt="Листовой гофрокартон">
                         </div>
                         <h4 class="products-block__title">Листовой гофрокартон</h4>
                         <button class="products-button button-o">Подробнее</button>
@@ -365,20 +353,20 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 order-lg-first col-12">
                     <div class="productions-slider-top">
-                        <img src="images/productions/pic_1.jpg" alt="Гофропродукция">
-                        <img src="images/productions/pic_2.jpg" alt="Гофропродукция">
-                        <img src="images/productions/pic_3.jpg" alt="Гофропродукция">
-                        <img src="images/productions/pic_4.jpg" alt="Гофропродукция">
-                        <img src="images/productions/pic_5.jpg" alt="Гофропродукция">
-                        <img src="images/productions/pic_6.jpg" alt="Гофропродукция">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_1.jpg" alt="Гофропродукция">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_2.jpg" alt="Гофропродукция">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_3.jpg" alt="Гофропродукция">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_4.jpg" alt="Гофропродукция">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_5.jpg" alt="Гофропродукция">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_6.jpg" alt="Гофропродукция">
                     </div>
                     <div class="productions-slider-bottom">
-                        <div class="productions-slider__item"><img src="images/productions/pic_1.jpg" alt="Гофропродукция"></div>
-                        <div class="productions-slider__item"><img src="images/productions/pic_2.jpg" alt="Гофропродукция"></div>
-                        <div class="productions-slider__item"><img src="images/productions/pic_3.jpg" alt="Гофропродукция"></div>
-                        <div class="productions-slider__item"><img src="images/productions/pic_4.jpg" alt="Гофропродукция"></div>
-                        <div class="productions-slider__item"><img src="images/productions/pic_5.jpg" alt="Гофропродукция"></div>
-                        <div class="productions-slider__item"><img src="images/productions/pic_6.jpg" alt="Гофропродукция"></div>
+                        <div class="productions-slider__item"><img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_1.jpg" alt="Гофропродукция"></div>
+                        <div class="productions-slider__item"><img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_2.jpg" alt="Гофропродукция"></div>
+                        <div class="productions-slider__item"><img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_3.jpg" alt="Гофропродукция"></div>
+                        <div class="productions-slider__item"><img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_4.jpg" alt="Гофропродукция"></div>
+                        <div class="productions-slider__item"><img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_5.jpg" alt="Гофропродукция"></div>
+                        <div class="productions-slider__item"><img src="<?php echo get_template_directory_uri(); ?>/images/productions/pic_6.jpg" alt="Гофропродукция"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 order-first">
@@ -407,19 +395,19 @@
                 <div class="client-box__line">
 
                     <div class="client-card card-odd wow fadeInUp">
-                        <img src="images/clients/sunrise.png" alt="Восход">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/sunrise.png" alt="Восход">
                     </div>
 
                     <div class="client-card card-even wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="images/clients/siberian_crane.png" alt="СТЕРХ">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/siberian_crane.png" alt="СТЕРХ">
                     </div>
 
                     <div class="client-card card-odd wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/clients/silver_snow.png" alt="Серебряный снег">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/silver_snow.png" alt="Серебряный снег">
                     </div>
 
                     <div class="client-card card-even wow fadeInUp" data-wow-delay="0.3s">
-                        <img src="images/clients/avdon.png" alt="Авдон">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/avdon.png" alt="Авдон">
                     </div>
 
                 </div>
@@ -427,19 +415,19 @@
                 <div class="client-box__line">
 
                     <div class="client-card card-odd wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="images/clients/broiler.png" alt="Турбаслинские бройлеры">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/broiler.png" alt="Турбаслинские бройлеры">
                     </div>
 
                     <div class="client-card card-even wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="images/clients/bashkir_icecream.png" alt="Башкирское мороженое">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/bashkir_icecream.png" alt="Башкирское мороженое">
                     </div>
 
                     <div class="client-card card-odd wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="images/clients/allat.png" alt="Аллат">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/allat.png" alt="Аллат">
                     </div>
 
                     <div class="client-card card-even wow fadeInUp" data-wow-delay="0.7s">
-                        <img src="images/clients/Alternative.png" alt="Альтернатива">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/Alternative.png" alt="Альтернатива">
                     </div>
 
                  </div>
@@ -447,19 +435,19 @@
                 <div class="client-box__line">
 
                     <div class="client-card card-odd wow fadeInUp" data-wow-delay="0.8s">
-                        <img src="images/clients/Indushkin.png" alt="Индюшкин">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/Indushkin.png" alt="Индюшкин">
                     </div>
 
                     <div class="client-card card-even wow fadeInUp" data-wow-delay="0.9s">
-                        <img src="images/clients/salavat.png" alt="САЛАВАТСТЕКЛО">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/salavat.png" alt="САЛАВАТСТЕКЛО">
                     </div>
 
                     <div class="client-card card-odd wow fadeInUp" data-wow-delay="1s">
-                        <img src="images/clients/dairy_farmer.png" alt="Молочный фермер">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/dairy_farmer.png" alt="Молочный фермер">
                     </div>
 
                     <div class="client-card card-even wow fadeInUp" data-wow-delay="1.1s">
-                        <img src="images/clients/Megy.png" alt="МЕГИ">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/clients/Megy.png" alt="МЕГИ">
                     </div>
 
                  </div>
@@ -475,12 +463,12 @@
         <div class="container">
         <h2 class="reviews-title">Отзывы о сотрудничестве</h2>
         <div class="reviews-slider">
-            <div class="reviews-slider_item"><img src="images/reviews/review_1.jpg" alt="Отзыв"></div>
-            <div class="reviews-slider_item"><img src="images/reviews/review_2.jpg" alt="Отзыв"></div>
-            <div class="reviews-slider_item"><img src="images/reviews/review_3.jpg" alt="Отзыв"></div>
-            <div class="reviews-slider_item"><img src="images/reviews/review_1.jpg" alt="Отзыв"></div>
-            <div class="reviews-slider_item"><img src="images/reviews/review_2.jpg" alt="Отзыв"></div>
-            <div class="reviews-slider_item"><img src="images/reviews/review_3.jpg" alt="Отзыв"></div>            
+            <div class="reviews-slider_item"><img src="<?php echo get_template_directory_uri(); ?>/images/reviews/review_1.jpg" alt="Отзыв"></div>
+            <div class="reviews-slider_item"><img src="<?php echo get_template_directory_uri(); ?>/images/reviews/review_2.jpg" alt="Отзыв"></div>
+            <div class="reviews-slider_item"><img src="<?php echo get_template_directory_uri(); ?>/images/reviews/review_3.jpg" alt="Отзыв"></div>
+            <div class="reviews-slider_item"><img src="<?php echo get_template_directory_uri(); ?>/images/reviews/review_1.jpg" alt="Отзыв"></div>
+            <div class="reviews-slider_item"><img src="<?php echo get_template_directory_uri(); ?>/images/reviews/review_2.jpg" alt="Отзыв"></div>
+            <div class="reviews-slider_item"><img src="<?php echo get_template_directory_uri(); ?>/images/reviews/review_3.jpg" alt="Отзыв"></div>            
         </div>
     </div>
     </section>
@@ -521,7 +509,7 @@
             
     <!-- Карта -->
     <div class="contacts-map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A748c1f44b8eadab0cdcf65d1f4659eacc3b3d62bc87f6dd7a36b113326d0411d&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script>       
+        <script type="text/javascript" charset="utf-8" async src="<?php echo get_template_directory_uri(); ?>/https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A748c1f44b8eadab0cdcf65d1f4659eacc3b3d62bc87f6dd7a36b113326d0411d&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script>       
     </div>
     <!-- /Карта -->
     </section>
@@ -537,7 +525,7 @@
 
     <!-- Подключение анимации -->
 
-    <script src="js/wow.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -545,10 +533,10 @@
     <!-- Подключение слайдеров -->
 
     
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.3.1.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
 
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.min.js"></script>
     <script>
         jQuery(function($) {
             $("#phone, #phone2").mask("+7 (999) 999-99-99");
